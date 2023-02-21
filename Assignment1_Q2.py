@@ -16,7 +16,7 @@ def answer_two():
         
         G.add_nodes_from(employees, bipartite='0', type='employee')
         G.add_nodes_from(movies, bipartite='1', type='movie')
-        node_type = nx.get_node_attributes(G, "type")
+        # node_type = nx.get_node_attributes(G, "type") ## This can be used to check the node attributes. 
         return G
         
     raise NotImplementedError()
